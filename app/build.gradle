@@ -26,7 +26,9 @@ android {
             dirs 'libs'
         }
     }
-
+    aaptOptions {
+        noCompress "tflite"
+    }
 }
 
 dependencies {
@@ -38,6 +40,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation(name: 'facelibrary-debug', ext: 'aar')
     implementation(name: 'openCVLibrary-debug', ext: 'aar')
-    implementation(name: 'emotionlibrary-debug', ext: 'aar')
-    implementation 'org.tensorflow:tensorflow-android:1.8.0'
+    //    implementation(name: 'emotionlibrary-debug', ext: 'aar')
+        implementation(name: 'emotionlibrary_lite-debug', ext: 'aar')
+    //    implementation 'org.tensorflow:tensorflow-android:1.8.0'
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+//    implementation project(':emotionlibrary_lite')
 }

@@ -1,2 +1,2 @@
-include ':app', ':facelibrary', ':emotionlibrary'
+include ':app', ':facelibrary', ':emotionlibrary', ':emotionlibrary_lite'
 include ':openCVLibrary'
